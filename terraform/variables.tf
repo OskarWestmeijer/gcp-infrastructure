@@ -20,8 +20,8 @@ variable "gcp_service_list" {
   description = "The list of apis necessary for the project"
   type        = list(string)
   default = [
-    "oslogin.googleapis.com",
-    "compute.googleapis.com", // Service Usage API
-    "cloudresourcemanager.googleapis.com"
+    "oslogin.googleapis.com", // Cloud OS Login API
+    "compute.googleapis.com", // Compute Engine API
+    "cloudresourcemanager.googleapis.com" // Cloud Resource Manager API
   ]
 }

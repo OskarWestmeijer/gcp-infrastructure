@@ -1,5 +1,7 @@
 # gcp-infrastructure
 
+Maintaining my gcp project.
+
 ## terraform commands
 
 ```
@@ -8,4 +10,5 @@ terraform fmt
 terraform validate
 terraform plan
 terraform apply
+terraform destroy
 ```
