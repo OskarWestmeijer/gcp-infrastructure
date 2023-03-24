@@ -1,6 +1,6 @@
 # gcp-infrastructure
 
-Maintaining my gcp project.
+Maintaining my gcp project. Created tfstate bucket manually.
 
 ## terraform commands
 
