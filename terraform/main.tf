@@ -5,9 +5,3 @@ resource "google_project_service" "gcp_services" {
   service                    = each.key
   disable_dependent_services = true
 }
-
-resource "google_compute_network" "vpc_network" {
-  name                    = "terraform-network"
-  auto_create_subnetworks = "false"
-  depends_on              = [google_project_service.gcp_services]
-}
