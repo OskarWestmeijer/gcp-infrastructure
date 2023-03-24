@@ -1,4 +1,4 @@
-name: 'Terraform CI'
+name: 'deploy-gcp-project-infrastructure'
 
 on:
   push:
@@ -8,7 +8,7 @@ on:
 
 jobs:
   terraform:
-    name: 'Setup project infrastructure'
+    name: 'apply terraform config'
     runs-on: ubuntu-latest
 
     defaults:
