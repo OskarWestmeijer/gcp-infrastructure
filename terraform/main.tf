@@ -16,6 +16,6 @@ resource "google_project_iam_binding" "infrastructure_sa_permissions" {
   for_each = var.infra_sa_roles
   role     = each.value
   members = [
-    "serviceAccount:${google_service_account.infrastructure_sa.email}"
+    "serviceAccount:${data.google_service_account.infrastructure_sa.email}"
   ]
 }
