@@ -30,7 +30,7 @@ variable "gcp_service_list" {
 variable "infra_sa_roles" {
   type = set(string)
   default = [
-    "roles/resourcemanager.organizationAdmin",
-    "roles/run.admin"
+    "roles/resourcemanager.projectIamAdmin", // to apply for roles
+    "roles/run.admin"                          // to allow public access to cloud run
   ]
 }
