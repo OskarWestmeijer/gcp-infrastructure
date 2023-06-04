@@ -28,6 +28,9 @@ variable "gcp_service_list" {
 }
 
 variable "infra_sa_roles" {
-  type    = set(string)
-  default = ["roles/run.admin"]
+  type = set(string)
+  default = [
+    "roles/resourcemanager.organizationAdmin",
+    "roles/run.admin"
+  ]
 }
