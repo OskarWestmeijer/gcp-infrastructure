@@ -25,3 +25,8 @@ variable "gcp_service_list" {
     "cloudresourcemanager.googleapis.com" // Cloud Resource Manager API
   ]
 }
+
+variable "infra_sa_roles" {
+  type    = set(string)
+  default = ["roles/run.admin"]
+}
