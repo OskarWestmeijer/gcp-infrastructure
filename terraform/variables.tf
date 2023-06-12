@@ -33,6 +33,7 @@ variable "infra_sa_roles" {
   type = set(string)
   default = [
     "roles/resourcemanager.projectIamAdmin", // to apply for roles
-    "roles/run.admin"                        // to allow public access to cloud run
+    "roles/run.admin",                       // to allow public access to cloud run
+    "roles/compute.networkAdmin"
   ]
 }
