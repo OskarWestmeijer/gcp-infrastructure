@@ -24,7 +24,8 @@ variable "gcp_service_list" {
     "compute.googleapis.com",              // Compute Engine API
     "cloudresourcemanager.googleapis.com", // Cloud Resource Manager API
     "iam.googleapis.com",                  // Identity and Access Management (IAM) API, edit service account permissions
-    "sqladmin.googleapis.com"
+    "sqladmin.googleapis.com",
+    "servicenetworking.googleapis.com" // database + vpc
   ]
 }
 
