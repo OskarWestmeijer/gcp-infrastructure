@@ -7,6 +7,6 @@ provider "google" {
 terraform {
   backend "gcs" {
     bucket = "westmeijer-oskar-tfstate-bucket"
-    prefix = "terraform/state"
+    prefix = "gcp-infrastructure"
   }
 }
